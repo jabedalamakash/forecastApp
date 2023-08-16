@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    reactStrictMode: true,
+    images : {
+      domains : ['openweathermap.org']
+    }
+}
 
-module.exports = nextConfig
+
+module.exports =nextConfig 
+
+
+// // https://openweathermap.org/
+// reactStrictMode: true,
+// images : {
+//   domains : ['media.geeksforgeeks.org']
+// }
