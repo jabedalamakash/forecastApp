@@ -86,11 +86,11 @@ const Screen = () => {
         
 
       
-       {/* {apiData.weather.main &&( */}
+      
 
-     { !apiData ? (
+     {/* { !apiData ? (
       <h1> No Data Found</h1>
-     ):(
+     ):( */}
 
             
              <div className="w-full px-10 sm:px-0 mx-auto ">
@@ -111,7 +111,7 @@ const Screen = () => {
                 </div> 
 
                 </div>
-         )}
+         {/* )} */}
  
 </div>  
             
