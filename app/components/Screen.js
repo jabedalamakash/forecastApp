@@ -16,7 +16,7 @@ const Screen = () => {
               const data= await res.json();
               setApiData(data);}
 
-           console.log(apiData);
+          //  console.log(apiData);
 
 
             const handleChange = (e) => {
@@ -93,7 +93,7 @@ const Screen = () => {
                   
                     <div className="w-full px-10 sm:px-0 mx-auto ">
 
-                    <div className=' relative mt-20 w-full   text-center m-20 sm:w-1/2 h-full p-20 mx-auto bg-white/10 shadow-5xl border border-r-0 border-b-0 border-opcity-30  rounded-3xl'>
+                    <div className=' relative mt-20 w-full   text-center m-20 sm:w-1/2 h-full p-10  sm:p-20 mx-auto bg-white/10 shadow-5xl border border-r-0 border-b-0 border-opcity-30  rounded-3xl'>
               
                      {apiData.name?  <Image
                       src={`http://openweathermap.org/img/wn/${apiData.weather[0].icon}@2x.png`}
