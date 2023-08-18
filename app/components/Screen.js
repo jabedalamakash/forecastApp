@@ -41,7 +41,7 @@ const Screen = () => {
              
                 
     return (
-             
+      
       <div className=" w-full mx-auto  overflow-hidden ">
 
             <div>
@@ -80,13 +80,13 @@ const Screen = () => {
               
             </form>            
         </div>
-
+      
         
         
-
-     <div>
-            
-           {!apiData? <Loading/>:
+      
+          <div>
+         
+           {!apiData? <Loading/> : 
                   
                   
                     <div className="w-full px-10 sm:px-0 mx-auto ">
@@ -105,11 +105,14 @@ const Screen = () => {
                        {apiData.message?<h1 className=" text-4xl text-white font-bold text-center">{apiData.message}</h1>:null}
 
                         </div> 
-
+                         
                         </div>}
-      
+                       
+                       
 
-      </div>  
+      </div> 
+
+      
   
      </div>  
             
