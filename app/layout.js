@@ -6,8 +6,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Forecast App',
-  description: 'Daily Current weather',
+  title: 'Sky Weather',
+  description: 'Get Current weather updates',
 }
 
 export default function RootLayout({ children }) {
