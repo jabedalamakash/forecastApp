@@ -12,9 +12,16 @@ const Screen = () => {
 
 
               const handleData =  async() => {
+              
+              try {
               const res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=9fda3e28bdbf04488a129f72b7e5852d&units=metric`);
               const data= await res.json();
               setApiData(data);}
+            
+              catch(err) { 
+                console.log(err);}
+
+          }
 
           //  console.log(apiData);
 
