@@ -17,7 +17,7 @@ const Screen = () => {
               const data= await res.json();
               setApiData(data);}
 
-            //  console.log(apiData);
+           console.log(apiData);
 
 
             const handleChange = (e) => {
