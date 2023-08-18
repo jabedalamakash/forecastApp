@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+// require(".env").config();
+
 const nextConfig = {
     reactStrictMode: true,
     images : {
