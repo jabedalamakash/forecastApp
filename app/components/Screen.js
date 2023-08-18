@@ -1,8 +1,10 @@
 "use client"
+
 import Image from "next/image";
-import React from 'react';
+import Loading from "../loading";
 import { useEffect, useState } from 'react';
 import '../globals.css';
+
 
 const Screen = () => {
 
@@ -47,7 +49,7 @@ const Screen = () => {
               src="/bg-img.jpg"
               width={1440}
               height={500}
-              className="fixed object-cover object-center w-screen h-full "
+              className="fixed object-cover object-center w-full h-full "
               alt="background image"
               />
 
@@ -80,11 +82,13 @@ const Screen = () => {
         </div>
 
         
+        
 
      <div>
-           {!apiData? <h1>Loading...</h1>:
+            
+           {!apiData? <Loading/>:
                   
-                    
+                  
                     <div className="w-full px-10 sm:px-0 mx-auto ">
 
                     <div className=' relative mt-20 w-full   text-center m-20 sm:w-1/2 h-full p-20 mx-auto bg-white/10 shadow-5xl border border-r-0 border-b-0 border-opcity-30  rounded-3xl'>
@@ -98,7 +102,7 @@ const Screen = () => {
                       {apiData.name? <h1 className=" text-4xl text-white text-center pb-3 font-semibold  block">{apiData.name}, {apiData.sys.country}</h1>:null}
                       {apiData.main? <h3><span className=" block text-white pb-3 font-semibold text-3xl text-center ">{apiData.main.temp} °C</span></h3>  :null}
                        {apiData.weather?<h1 className= " block text-3xl text-center font-semibold  text-white ">{apiData.weather[0].main}</h1>:null} 
-                       {apiData.message?<h1 className=" text-4xl text-red-700 font-bold text-center">{apiData.message}</h1>:null}
+                       {apiData.message?<h1 className=" text-4xl text-white font-bold text-center">{apiData.message}</h1>:null}
 
                         </div> 
 
