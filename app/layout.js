@@ -11,9 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
  title: 'Sky Weather',
- description: 'Get Your Current Weather Update',
- google: "zUHOr9PriOvBWZMPsfz-uxclsnqbVyeIx12M9idR9SM",
- 
+ description: 'Get Your Current Weather Update', 
  }
 
 

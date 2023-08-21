@@ -65,7 +65,7 @@ const Screen = () => {
       <div className=" relative w-full mt-20 px-10 sm:px-0 mx-auto mb-20   z-10 ">
 
 
-          <h1 className=" text-7xl text-white font-bold text-center mb-20">Sky Weather </h1>
+          <h1 className=" text-5xl sm:text-7xl text-white font-bold text-center mb-20">Sky Weather </h1>
 
           <form onSubmit={handleSubmit} className=" text-center  mx-auto sm:text-left" >
 
