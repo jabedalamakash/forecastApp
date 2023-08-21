@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <Head>
       <meta name="google" content="zUHOr9PriOvBWZMPsfz-uxclsnqbVyeIx12M9idR9SM" />
       </Head>
-      <body className={inter.className}>{children}
+      <body  suppressHydrationWarning={true} className={inter.className}>{children}
       
       </body>
     </html>
